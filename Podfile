@@ -8,7 +8,7 @@ target 'Net Runner' do
 
   # Pods for Net Runner
 
-  pod 'TensorIO'
+  pod 'TensorIO', git: 'https://github.com/doc-ai/tensorio-ios.git', branch: 'gpu-delegate-experimental'
   pod 'SVProgressHUD'
   pod 'SSZipArchive'
   pod 'FMDB'

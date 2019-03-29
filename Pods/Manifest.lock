@@ -4,31 +4,40 @@ PODS:
   - FMDB/standard (2.7.5)
   - SSZipArchive (2.1.4)
   - SVProgressHUD (2.2.5)
-  - TensorFlowLite (1.13.1)
+  - TensorFlowLiteGpuExperimental (0.0.1)
   - TensorIO (0.4.2):
-    - TensorFlowLite
+    - TensorFlowLiteGpuExperimental
 
 DEPENDENCIES:
   - FMDB
   - SSZipArchive
   - SVProgressHUD
-  - TensorIO
+  - TensorIO (from `https://github.com/doc-ai/tensorio-ios.git`, branch `gpu-delegate-experimental`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FMDB
     - SSZipArchive
     - SVProgressHUD
-    - TensorFlowLite
-    - TensorIO
+    - TensorFlowLiteGpuExperimental
+
+EXTERNAL SOURCES:
+  TensorIO:
+    :branch: gpu-delegate-experimental
+    :git: https://github.com/doc-ai/tensorio-ios.git
+
+CHECKOUT OPTIONS:
+  TensorIO:
+    :commit: 55648c57607f4a41b16750d8fff8474c50c8eb26
+    :git: https://github.com/doc-ai/tensorio-ios.git
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TensorFlowLite: 8b9dc4eb32eac0f8cb660c66bca7604da56dcc5a
-  TensorIO: e2c0287831a5cb4cb12a0b3f7536fe332a6c9598
+  TensorFlowLiteGpuExperimental: 16d9be415bce7b2bba9e0be17e2009fd57428d0f
+  TensorIO: 920372baa3d6756d83862502b3c3c41d4376e5c6
 
-PODFILE CHECKSUM: d9f64d480ea6b921912e9f60aa497fe0d57d890b
+PODFILE CHECKSUM: df9a0aa4894b4ec58edc419ec06b03e908552e1d
 
 COCOAPODS: 1.6.0

@@ -1,6 +1,6 @@
 {
   "name": "TensorIO",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "summary": "An Objective-C and Swift wrapper for TensorFlow Lite.",
   "description": "Perform inference with TensorFlow Lite models using all the conveniences of Objective-C or Swift",
   "homepage": "https://github.com/doc-ai/tensorio-ios",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/doc-ai/tensorio-ios.git",
-    "tag": "0.4.1"
+    "tag": "0.4.2"
   },
   "platforms": {
     "ios": "9.3"
@@ -26,10 +26,11 @@
     "AVFoundation",
     "CoreMedia",
     "Accelerate",
-    "VideoToolbox"
+    "VideoToolbox",
+    "Metal"
   ],
   "dependencies": {
-    "TensorFlowLite": [
+    "TensorFlowLiteGpuExperimental": [
 
     ]
   },
@@ -38,6 +39,6 @@
     "TensorIO/Classes/TIO Model/TIOPixelBufferToTensorHelpers.h"
   ],
   "xcconfig": {
-    "USER_HEADER_SEARCH_PATHS": "\"${PODS_ROOT}/TensorFlowLite/Frameworks/tensorflow_lite.framework/Headers\""
+    "USER_HEADER_SEARCH_PATHS": "\"${PODS_ROOT}/TensorFlowLiteGpuExperimental/Frameworks/tensorflow_lite_gpu.framework/Headers\""
   }
 }

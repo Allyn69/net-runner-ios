@@ -31,3 +31,7 @@ NSError * const kTIOTFLiteModelConstructInterpreterError = [NSError errorWithDom
 NSError * const kTIOTFLiteModelAllocateTensorsError = [NSError errorWithDomain:@"doc.ai.netrunner" code:103 userInfo:@{
     NSLocalizedDescriptionKey: @"Unable to allocate tensors"
 }];
+
+NSError * const kTIOTFLiteModelGPUDelegateError = [NSError errorWithDomain:@"doc.ai.netrunner" code:104 userInfo:@{
+    NSLocalizedDescriptionKey: @"Unable to modify graph with GPU delegate"
+}];

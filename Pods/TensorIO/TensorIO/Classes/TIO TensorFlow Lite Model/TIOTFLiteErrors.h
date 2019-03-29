@@ -43,4 +43,11 @@ extern NSError * const kTIOTFLiteModelConstructInterpreterError;
 
 extern NSError * const kTIOTFLiteModelAllocateTensorsError;
 
+/**
+ * Set the `TIOModel` load error to `kTIOTFLiteModelGPUDelegateError` when the
+ * call to `ModifyGraphWithDelegate` using a GPU delegate fails.
+ */
+
+extern NSError * const kTIOTFLiteModelGPUDelegateError;
+
 NS_ASSUME_NONNULL_END
